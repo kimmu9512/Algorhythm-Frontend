@@ -1,0 +1,27 @@
+.all-questions-container {
+  padding: 10px;
+  background-color: #2e2e2e;
+  color: #f0f0f0;
+  border-radius: 40px;
+}
+
+.all-questions-container .all-questions-header,
+.all-questions-container .all-question {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+}
+
+.all-questions-container h2 {
+  font-size: 45px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.all-questions-container h3 {
+  font-size: 20px;
+  color: #a9a9a9;
+  margin-bottom: 20px;
+}

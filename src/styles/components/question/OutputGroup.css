@@ -1,0 +1,28 @@
+.output-group {
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.expected-container {
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  background-color: #2c2e31;
+  padding: 20px;
+}
+.check-button {
+  font-size: 30px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  background-color: #4caf50;
+}
+.your-container {
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  background-color: #2c2e31;
+  padding: 20px;
+}

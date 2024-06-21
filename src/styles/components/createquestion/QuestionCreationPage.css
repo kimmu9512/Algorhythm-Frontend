@@ -1,0 +1,11 @@
+.question-page-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 98vh;
+  overflow: hidden;
+  background-color: #1e1e1e;
+}
+.create-question-interaction .code-editor {
+  margin-top: 15px;
+}

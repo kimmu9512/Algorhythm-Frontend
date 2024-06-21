@@ -1,0 +1,27 @@
+/* SocialSignInButtons.css */
+.signin-options {
+  margin-top: 24px;
+}
+
+.social-btn {
+  position: relative;
+  width: 100%;
+  border: 1px solid #c2c8d0;
+  border-radius: 8px;
+  font-size: 22px;
+  align-items: center;
+  background-color: #fff;
+  height: 70px;
+  transition: box-shadow 0.15 ease-in-out, background-color 0.15s ease-in-out;
+  cursor: pointer;
+  padding: 0 8px 0 52px;
+  color: #2d333a;
+  margin-bottom: 8px;
+  display: flex;
+  text-align: left;
+  outline: 0;
+}
+
+.social-btn:hover {
+  background-color: #e5e5e5;
+}

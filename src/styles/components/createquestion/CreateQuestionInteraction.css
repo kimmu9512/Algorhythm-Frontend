@@ -1,0 +1,15 @@
+.create-question-interaction {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-width: 50%;
+  max-width: 50%;
+  color: #fff;
+  background-color: #1f2022;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #525252;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}

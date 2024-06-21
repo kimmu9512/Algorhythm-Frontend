@@ -1,0 +1,28 @@
+.test-case-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.test-case-header {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.test-case-card-container {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-test-case-button {
+  margin-top: 10px;
+}
+.test-case-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+}

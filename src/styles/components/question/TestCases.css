@@ -1,0 +1,10 @@
+.test-cases {
+  height: 40vh;
+  overflow-y: auto;
+  background-color: #1f2022;
+  color: #d4d4d4;
+  padding: 10px;
+}
+.test-cases h2 {
+  color: #d4d4d4;
+}
