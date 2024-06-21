@@ -1,0 +1,35 @@
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  position: relative;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  background-color: #2d2d2d;
+  color: #fff;
+}
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 80%;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+  width: 10%;
+  cursor: pointer;
+}
+
+.solution-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 80%;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+  width: 10%;
+  cursor: pointer;
+}

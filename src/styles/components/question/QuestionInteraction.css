@@ -1,0 +1,10 @@
+.question-interaction {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-width: 50%;
+  max-width: 50%;
+  color: #fff;
+  background-color: #1f2022;
+  overflow: hidden;
+}

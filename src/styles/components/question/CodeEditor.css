@@ -1,0 +1,14 @@
+.editor-container {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  overflow-y: auto;
+}
+.code-editor {
+  font-size: 60px;
+  background-color: #1f2022 !important;
+  flex-grow: 1;
+}
+.editor-container h2 {
+  color: #d4d4d4;
+}

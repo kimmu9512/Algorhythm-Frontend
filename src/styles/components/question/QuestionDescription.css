@@ -1,0 +1,73 @@
+/* QuestionDescription.css */
+.question-description {
+  margin: 20px;
+
+  color: #d4d4d4;
+  border: 1px solid #525252;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 98%;
+  border-radius: 20px;
+  display: flex;
+  min-width: 50%;
+  max-width: 50%;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.description-text {
+  margin-bottom: 100px;
+  margin-left: 15px;
+
+  flex: 1;
+}
+
+.markdown-container {
+  font-size: 30px;
+  padding: 20px;
+  max-height: 100%;
+  overflow-y: auto;
+  background-color: #1e1e1e;
+}
+
+.code {
+  font-family: monospace;
+  overflow-x: hidden;
+  background-color: #3a3d41;
+  tab-size: 2;
+}
+
+.question-description h3 {
+  margin-top: 10px;
+}
+
+pre {
+  font-family: monospace;
+  overflow-x: hidden;
+  background-color: #2c2e31;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+.question-description::-webkit-scrollbar,
+.question-interaction::-webkit-scrollbar {
+  width: 12px;
+}
+
+.question-description::-webkit-scrollbar-track,
+.question-interaction::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.question-description::-webkit-scrollbar-thumb,
+.question-interaction::-webkit-scrollbar-thumb {
+  background-color: #3a3d41;
+  border-radius: 6px;
+  border: 3px solid #1e1e1e;
+}
+
+.question-description,
+.question-interaction {
+  scrollbar-width: thick;
+  scrollbar-color: #3a3d41 #1e1e1e;
+}

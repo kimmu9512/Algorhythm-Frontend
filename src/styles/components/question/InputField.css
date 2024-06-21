@@ -1,0 +1,35 @@
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.input-text {
+  margin-left: 20px;
+  font-size: 30px;
+}
+.input-box {
+  color: #ffffff;
+  background-color: #3a3d41;
+  border-radius: 20px;
+  padding: 15px;
+  width: 90%;
+  flex: 1;
+  margin-top: 20px;
+  font-size: 30px;
+}
+.input-box::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #d4d4d4;
+  opacity: 1; /* Firefox */
+}
+
+.input-box:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ffffff;
+}
+
+.input-box::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ffffff;
+}

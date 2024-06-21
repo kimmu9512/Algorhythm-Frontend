@@ -1,0 +1,74 @@
+/* SignInPage.css */
+.signin-page {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.signin-container {
+  transform: translateY(50%);
+  padding: 0 0px 0px;
+  border-radius: 3px;
+  box-shadow: none;
+  box-sizing: content-box;
+  flex-shrink: 0;
+  width: 19%;
+}
+.signin-container h2 {
+  font-weight: 1000;
+  color: #ffffff;
+  font-size: 40px;
+  margin-bottom: 1.5rem;
+}
+
+.signup-section {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 19px;
+  width: 100%;
+  color: #ffffff;
+}
+
+.signup-link {
+  margin-left: 5px;
+  font-size: 20px;
+  color: #ffcc00;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.divider {
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  border: none;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  padding: 24px 0 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  vertical-align: baseline;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1 0 auto;
+  height: 0.5em;
+  border-bottom: 1px solid #c2c8d0;
+  margin: 10px 0 10px 0;
+}
+
+.or {
+  text-align: center;
+  flex: 0.2 0 auto;
+  margin: 0;
+  font-size: 18px;
+  height: 10px;
+}
