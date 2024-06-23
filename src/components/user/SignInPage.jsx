@@ -30,7 +30,7 @@ const SignInPage = () => {
     <div className="signin-page">
       <div className="signin-container">
         <h2>Welcome back</h2>
-        <SignInForm onSignIn={handleSignInWithEmail} />
+        <SignInForm onSignIn={handleSignInWithEmail} signIn={true} />
         <div className="signup-section">
           <span className="signup-text">Don't have an account? </span>
           <span className="signup-link" onClick={() => navigate("/signup")}>
