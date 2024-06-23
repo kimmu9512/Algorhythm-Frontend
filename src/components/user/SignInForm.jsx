@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../styles/components/user/SignInForm.css";
-const SignInForm = ({ onSignIn }) => {
+const SignInForm = ({ onSignIn, signIn }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -28,7 +28,7 @@ const SignInForm = ({ onSignIn }) => {
         required
       />
       <button type="submit" className="continue-button">
-        Continue
+        {signIn ? "Login" : "Register"}
       </button>
     </form>
   );

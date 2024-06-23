@@ -31,11 +31,11 @@ const SignInPage = () => {
     <div className="signin-page">
       <div className="signin-container">
         <h2>Welcome back</h2>
-        <SignInForm onSignIn={handleSignUpWithEmail} />
+        <SignInForm onSignIn={handleSignUpWithEmail} signIn={false} />
         <div className="signup-section">
-          <span className="signup-text">Don't have an account? </span>
-          <span className="signup-link" onClick={() => navigate("/signup")}>
-            Sign Up
+          <span className="signup-text">Already have an account ? </span>
+          <span className="signup-link" onClick={() => navigate("/signin")}>
+            Sign In
           </span>
         </div>
         <div className="divider">

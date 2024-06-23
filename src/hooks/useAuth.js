@@ -64,13 +64,11 @@ export const useAuth = () => {
         email,
         password
       );
-
-      console.log("User credential: ", userCredential);
-      const { uid } = userCredential.user;
+      const idToken = await userCredential.user.getIdToken();
 
       const response = await axios.post(`${backendUrl}/auth/register`, {
         email,
-        uid,
+        idToken,
       });
       return userCredential;
     } catch (error) {
@@ -85,9 +83,11 @@ export const useAuth = () => {
 
       const { email, uid } = userCredential.user;
 
+      const idToken = await userCredential.user.getIdToken();
+
       const response = await axios.post(`${backendUrl}/auth/register`, {
         email,
-        uid,
+        idToken,
       });
 
       return userCredential;
@@ -111,16 +111,23 @@ export const useAuth = () => {
     const provider = getProvider(providerType);
     try {
       const userCredential = await signInWithPopup(auth, provider);
+      const { email, uid } = userCredential.user;
+      const checkResponse = await axios.get(`${backendUrl}/auth/checkUser`, {
+        params: { email },
+      });
+      if (!checkResponse.data.exists) {
+        const registerResponse = await axios.post(
+          `${backendUrl}/auth/register`,
+          {
+            email,
+            idToken: await userCredential.user.getIdToken(),
+          }
+        );
 
-      const isNewUser = getAdditionalUserInfo(userCredential).isNewUser;
-      if (isNewUser) {
-        const { email, uid } = userCredential.user;
-        const response = await axios.post(`${backendUrl}/auth/register`, {
-          email,
-          uid,
-        });
+        if (registerResponse.status !== 201) {
+          throw new Error("Failed to register user on database");
+        }
       }
-
       return userCredential;
     } catch (error) {
       throw new Error("Failed to sign in with provider");
