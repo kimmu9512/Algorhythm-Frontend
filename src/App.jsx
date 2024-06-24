@@ -6,7 +6,7 @@ import { routes } from "./routes"; // Import centralized routes
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Algorhythm-Frontend">
       <Layout>
         {" "}
         <Routes>
