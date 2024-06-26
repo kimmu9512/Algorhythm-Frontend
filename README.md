@@ -93,7 +93,7 @@ Enter your backend server's domain in the `VITE_BACKEND_URL` variable.
 ### Example `.env` file
 
 ```dotenv
-VITE_FIREBASE_API_KEY=AIzaSyA...
+VITE_FIREBASE_API_KEY=AIz.....
 VITE_FIREBASE_AUTH_DOMAIN=myapp.firebaseapp.com
 VITE_FIREBASE_PROJECT_ID=myapp
 VITE_FIREBASE_STORAGE_BUCKET=myapp.appspot.com
