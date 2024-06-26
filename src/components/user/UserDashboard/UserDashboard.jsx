@@ -87,6 +87,12 @@ function UserDashboard() {
           All Questions
         </button>
       </div>
+      <h2>
+        Just solve all the review questions that pop up daily and solve two
+        questions from today's challenge daily (or more if you wish for today's
+        challenge).
+      </h2>
+      <h2>Stay consistent and watch your skills improve over time!</h2>
       <div
         className={`tab-content ${
           activeTab === "explore-review" ? "active" : ""
